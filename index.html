@@ -1,24 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" conten="">
     <meta name="keywords" content="">
+    <link rel="icon" type="image/x-icon" href="imgs/radar-logo.svg" alt="Radars logo, et orange R i en moderne stil, hvor rykken mangler">
     <link rel="stylesheet" href="css/nav-foot.css">
     <link rel="stylesheet" href="css/forside.css">
     <title>Radar</title>
 </head>
 <body>
     <header>
+        <img class="logo" src="imgs/radar-logo.svg" alt="Radars logo, et orange R i en moderne stil, hvor rykken mangler">
         <nav>
-            <input type="checkbox" id="menu-bar">
-            <label for="menu-bar"><img src="imgs/burger-menu-svgrepo-com.svg" alt="Tre streger der åbner menuen"></label>
+            <input type="checkbox" id="menu-bar" aria-label="Knap til at vise burgermenu">
+            <label for="menu-bar"><img class="burgermenu" src="imgs/burger-menu-svgrepo-com.svg" alt="Tre streger der åbner menuen"></label>
             <ul>
-                <li><a href="#">Events</a></li>
+                <li><a href="#">Events</a>
+                    <ul>
+                        <li><a href=""></a>Event kalender</li>
+                    </ul>
+                </li>
                 <li><a href="#">Shop</a></li>
-                <li><a href="#">Om os</a></li>
-                <li><a href="#">Arbejd med Radar</a></li>
+                <li><a href="#">Om os</a>
+                    <ul>
+                        <li><a href=""></a>Kontakt oplysninger</li>
+                        <li><a href=""></a>Anmeldelser</li>
+                    </ul>
+                </li>
+                <li><a href="#">Arbejd med Radar</a>
+                    <ul>
+                        <li><a href=""></a>Nyt band</li>
+                        <li><a href=""></a>Samarbejde</li>
+                        <li><a href=""></a>De frivillige</li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
