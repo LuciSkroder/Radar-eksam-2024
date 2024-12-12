@@ -6,6 +6,9 @@
 
 body {
     background-color: #0C204A;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 :root {
@@ -15,7 +18,10 @@ body {
     --white: #FBEFF9;
     --contrast: #F78B38;
     --red: #B03B39;
+    --ligthred: #D95D41;
     --warm: #DE9334;
+    --yellow: #E4B44C;
+    --brown: #865A39;
 }
 
 header {
@@ -76,4 +82,22 @@ input {
 #menu-bar ul li:focus-within > ul,
 #menu-bar ul li:hover > ul {
     display: block;
+}
+
+footer {
+    background-color: #865A39;
+    margin-top: auto;
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+}
+
+footer ul li {
+    text-wrap: wrap;
+    color: #FBEFF9;
+    padding: 10%;
+    font-size: 2rem;
 }
