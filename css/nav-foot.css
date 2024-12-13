@@ -34,7 +34,11 @@ header {
     top: 0;
     left: 0;
     margin: 2%;
-    height: 5.8rem;
+    height: 2.8rem;
+}
+
+#navbox {
+    display: none;
 }
 
 nav {
@@ -54,14 +58,14 @@ input {
     top: 0;
     right: 0;
     margin: 2%;
-    width: 6rem;
+    width: 3rem;
 }
 
 #menu-bar:checked ~ ul {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 7rem;
+    margin-top: 4rem;
     list-style: none;
 }
 
@@ -76,7 +80,7 @@ input {
 #menu-bar:checked ~ ul li a {
     text-decoration: none;
     color: var(--contrast);
-    font-size: 3.2rem;
+    font-size: 2rem;
 }
 
 #menu-bar ul li:focus-within > ul,
@@ -98,6 +102,115 @@ footer ul {
 footer ul li {
     text-wrap: wrap;
     color: #FBEFF9;
-    padding: 10%;
-    font-size: 2rem;
+    padding: 6%;
+    font-size: 1rem;
+}
+
+
+@media only screen and (min-width: 540px) {
+
+    .logo {
+        height: 3.1rem;
+    }
+
+    .burgermenu {
+        width: 3.3rem;
+    }
+
+    #menu-bar:checked ~ ul li a {
+        font-size: 1.4rem;
+    }
+    
+    footer ul li {
+        padding: 2%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+
+    .logo {
+        height: 5.1rem;
+    }
+
+    .burgermenu {
+        width: 5.3rem;
+    }
+
+    #menu-bar:checked ~ ul {
+        margin-top: 6rem;
+    }
+
+    #menu-bar:checked ~ ul li a {
+        font-size: 2.4rem;
+    }
+
+    footer ul li {
+        font-size: 2rem;
+    }   
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .logo {
+        height: 5.3rem;
+    }
+
+    .burgermenu {
+        width: 5.4rem;
+    }
+
+    #menu-bar:checked ~ ul {
+        margin-top: 6.2rem;
+    }
+
+    #menu-bar:checked ~ ul li a {
+        font-size: 2.4rem;
+    }
+
+    footer ul li {
+        font-size: 2rem;
+    }   
+}
+
+@media only screen and (min-width: 1300px) {
+    
+    #navbox {
+        display: block;
+        width: 65vw;
+        height: 5rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background: linear-gradient(38deg, var(--background) 11ch, var(--contrast) 11ch);
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row !important;
+        list-style: none;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul li {
+       padding: 0 1rem;
+       margin-top: 1rem;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #2b2d31;
+        font-size: 2.5rem;
+        display: block;
+        width: 100%;
+    }
+
+    nav ul li ul {
+        display: none;
+    }
 }
