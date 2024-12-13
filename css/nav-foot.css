@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -168,7 +169,7 @@ footer ul li {
     }
 
     footer ul li {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }   
 }
 
@@ -176,13 +177,13 @@ footer ul li {
     
     #navbox {
         display: block;
-        width: 65vw;
+        width: 67vw;
         height: 5rem;
         position: absolute;
         top: 0;
         right: 0;
         z-index: -1;
-        background: linear-gradient(38deg, var(--background) 11ch, var(--contrast) 11ch);
+        background: linear-gradient(38deg, var(--background) 11ch, var(--contrast) 11.1ch);
     }
 
     label {
@@ -205,12 +206,32 @@ footer ul li {
     nav ul li a {
         text-decoration: none;
         color: #2b2d31;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         display: block;
         width: 100%;
     }
 
     nav ul li ul {
         display: none;
+    }
+
+    footer ul li {
+        font-size: 1.5rem;
+    }  
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .logo {
+        height: 6rem;
+    }
+
+    nav ul li {
+        padding: 0 2.6rem;
+    }
+
+    footer ul li {
+        font-size: 1.75rem;
+        margin: 0.5rem 0;
     }
 }
