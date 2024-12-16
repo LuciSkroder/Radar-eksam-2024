@@ -12,6 +12,10 @@ body {
     min-height: 100vh;
 }
 
+main {
+    min-height: 100vh;
+}
+
 :root {
     --green: #94B688;
     --background: #0C204A;
@@ -94,6 +98,10 @@ input {
 footer {
     background-color: #865A39;
     margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 footer ul {
@@ -233,7 +241,6 @@ footer ul li {
     }
 
     footer ul li {
-        font-size: 1.75rem;
         margin: 0.5rem 0;
     }
 }

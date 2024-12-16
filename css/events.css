@@ -1,0 +1,40 @@
+:root {
+    --green: #94B688;
+    --background: #0C204A;
+    --grey: #454851;
+    --white: #FBEFF9;
+    --contrast: #F78B38;
+    --red: #B03B39;
+    --ligthred: #D95D41;
+    --warm: #DE9334;
+    --yellow: #E4B44C;
+    --brown: #865A39;
+}
+
+h1 {
+    color: var(--contrast);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.gridbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 5%;
+}
+
+article {
+    padding: 0.5rem;
+}
+
+section article img {
+    width: 100%;
+}
+
+h3 {
+    color: var(--green);
+    position: absolute;
+    transform: translate(-0%, -130%);
+    text-shadow: black 2px 1px 0px;
+}
