@@ -12,9 +12,11 @@
 }
 
 h1 {
-    
+    color: var(--contrast);
+    text-align: center;
+    margin-top: 1rem;
 }
 
-img {
+article img {
     width: 100%;
 }
