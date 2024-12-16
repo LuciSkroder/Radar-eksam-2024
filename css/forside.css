@@ -73,17 +73,6 @@ section p {
     margin: 1.2rem;
 }
 
-.greenstribe {
-    display: block;
-    width: 25vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -5;
-    background: linear-gradient(115deg, var(--background) 60ch, var(--green) 60.1ch 65ch, var(--background) 65.1ch)
-}
-
 @media only screen and (min-width: 540px) and (orientation: landscape) {
     .asideflex {
         display: flex;
@@ -202,6 +191,18 @@ section p {
         width: 95% !important;
         margin-left: 0.34rem;
     }
+
+    
+.greenstribe {
+    display: block;
+    width: 25vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -5;
+    background: linear-gradient(115deg, var(--background) 60ch, var(--green) 60.1ch 65ch, var(--background) 65.1ch)
+}
 }
 
 @media only screen and (min-width: 1600px) {
