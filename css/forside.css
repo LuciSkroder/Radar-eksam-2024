@@ -36,10 +36,6 @@ aside {
     background-color: var(--warm);
 }
 
-.newshead {
-    font-size: 2.4rem;
-}
-
 article {
     margin: 0 auto;
 }
@@ -60,6 +56,38 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+    color: var(--white);
+    margin-top: 2rem;
+}
+
+.newshead {
+    font-size: 2.4rem;
+    color: black;
+    margin: 1rem;
+}
+
+section p {
+    color: var(--white);
+    margin: 1.2rem;
+}
+
+@media only screen and (min-width: 540px) and (orientation: landscape) {
+    .asideflex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    article img {
+        width: 85% !important;
+    }
+
+    .newsbar {
+        margin-top: 1.5rem;
+    }
+}
+
 @media only screen and (min-width: 540px) {
     h1 {
         font-size: 2.4rem;
@@ -67,9 +95,10 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) and (orientation: portrait) {
-    h1 {
-        margin: 1.8rem auto;
-        font-size: 3rem;
+    .newsbar {
+        width: 4rem;
+        margin-top: 1.7rem;
+        margin-right: 7rem;
     }
 }
 
