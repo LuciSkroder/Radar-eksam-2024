@@ -17,6 +17,134 @@ h1 {
     margin-top: 1rem;
 }
 
+h2 {
+    color: var(--contrast);
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.shopbox {
+    width: 80vw;
+    height: 45vw;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: auto;
+    background-color: var(--warm);
+    border-radius: 10px;
+}
+
+.shopbox::-webkit-scrollbar-thumb { 
+    background: #000; /* Color of the scrollbar thumb */ 
+}
+
+.scrollbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
 article img {
     width: 100%;
+    padding: 0.4rem;
+}
+
+p {
+    padding: 0.2rem;
+    margin-left: 0.3rem;
+    margin-bottom: 1.2rem;
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    h1 {
+        font-size: 3rem;
+        margin-top: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .scrollbox {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 2.8rem;
+        margin-top: 2.3rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+        margin-top: 5rem;
+    }
+    
+    .scrollbox {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    h1 {
+        text-align: left;
+        margin-left: 9rem;
+        margin-top: 0;
+    }
+    
+    h2 {
+        text-align: left;
+        margin-left: 8.5rem;
+    }
+    
+    .shopbox {
+        height: 20vh;
+        overflow-x: auto; /* Enable horizontal scrolling */ 
+        overflow-y: hidden; /* Hide vertical scrolling */ 
+    }
+
+    .shopbox::-webkit-scrollbar { 
+        height: 0.5rem; /* Height of horizontal scrollbar */ 
+    }
+    
+    .scrollbox {
+        grid-template-columns: repeat(10, 12rem);
+        grid-template-rows: 1fr;
+    }
+
+    article {
+        height: 120%;
+    }
+
+    article img {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+    h1 {
+        font-size: 3.5rem;
+        margin-left: 10.5rem;
+        margin-top: 0.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        margin-left: 10rem;
+    }
+
+    article img {
+        width: 80%;
+    }
+
+    article p {
+        font-size: 1.2rem;
+    }
+
+    .shopbox {
+        height: 22vh;
+    }
 }
