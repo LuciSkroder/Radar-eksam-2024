@@ -18,9 +18,6 @@ h1 {
 }
 
 section {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     margin: 2rem;
     padding: 1rem;
@@ -34,4 +31,29 @@ h2 {
 
 p {
     color: #FBEFF9;
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    h1 {
+        text-align: left;
+        margin-left: 8rem;
+    }
+
+    section {
+        margin: 3.5rem;
+    }
 }
