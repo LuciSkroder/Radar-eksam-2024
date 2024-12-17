@@ -10,3 +10,28 @@
     --yellow: #E4B44C;
     --brown: #865A39;
 }
+
+h1 {
+    text-align: center;
+    color: #F78B38;
+    margin-top: 3.6rem;
+}
+
+section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: rgba(69, 72, 81, 0.4);
+}
+
+h2 {
+    color: #94B688;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    color: #FBEFF9;
+}
