@@ -73,6 +73,10 @@ section p {
     margin: 1.2rem;
 }
 
+.reviewlink {
+    color: #F78B38;
+}
+
 @media only screen and (min-width: 540px) and (orientation: landscape) {
     .asideflex {
         display: flex;
