@@ -1,3 +1,3 @@
 User-agent: *
-Allow: /
-Sitemap:
+Disallow: /
+Sitemap: https://eksamen2024.luciskroder.dk/sitemap.xml
